@@ -1,0 +1,250 @@
+.products-page {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f4f6f8;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.products-header h1 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.products-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+/* ΝΕΟ ΠΡΟΪΟΝ */
+
+.add-product-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2937;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-product-button:hover {
+  background: #374151;
+}
+
+/* ΦΟΡΜΑ */
+
+.product-form-container {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.product-form {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  max-width: 600px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.close-button:hover {
+  color: #111827;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  background: white;
+  color: #111827;
+
+  font-size: 15px;
+
+  pointer-events: auto;
+  user-select: text;
+  cursor: text;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-button {
+  padding: 10px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background: #f3f4f6;
+}
+
+.save-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #1f2937;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #374151;
+}
+
+/* ΜΗΝΥΜΑ ΣΦΑΛΜΑΤΟΣ */
+
+.error-message {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* ΠΙΝΑΚΑΣ */
+
+.products-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.products-table th {
+  padding: 16px;
+  text-align: left;
+  background: #f9fafb;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.products-table td {
+  padding: 16px;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.products-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.action-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+.action-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.action-button:hover {
+  background: #d1d5db;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.delete-button:hover {
+  background: #fecaca;
+}
+
+/* ΚΙΝΗΤΟ */
+
+@media (max-width: 700px) {
+  .products-page {
+    padding: 20px;
+  }
+
+  .products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .product-form {
+    max-width: 100%;
+  }
+}

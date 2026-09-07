@@ -1,0 +1,187 @@
+.shipments-page {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f4f6f8;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.shipments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shipments-header h1 {
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.shipments-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.add-shipment-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2937;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-shipment-button:hover {
+  background: #374151;
+}
+
+.shipments-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.shipments-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+.shipments-table th {
+  padding: 16px;
+  text-align: left;
+  background: #f9fafb;
+  color: #374151;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.shipments-table td {
+  padding: 16px;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.shipments-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.shipment-form-container {
+  margin-bottom: 30px;
+}
+
+.shipment-form {
+  max-width: 650px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input {
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #6b7280;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-button,
+.save-button,
+.delete-button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.save-button {
+  background: #1f2937;
+  color: white;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cancel-button:hover {
+  background: #d1d5db;
+}
+
+.save-button:hover {
+  background: #374151;
+}
+
+.delete-button:hover {
+  background: #fecaca;
+}
+
+@media (max-width: 700px) {
+  .shipments-page {
+    padding: 20px;
+  }
+
+  .shipments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .shipment-form {
+    padding: 20px;
+  }
+}
