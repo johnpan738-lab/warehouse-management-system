@@ -1,4 +1,4 @@
-# Warehouse Management System (MWS)
+# Warehouse Management System (WMS)
 
 ## 1. Περιγραφή Project
 
@@ -723,10 +723,10 @@ PRODUCT SHIPMENTS FROM WAREHOUSE
 
 ---
 
-## 30. Author
+## 30. Developer
 
 **Ioannis Panagopoulos**
 
 Coding Factory Final Project
 
-**Warehouse Management System (MWS)**
+**Warehouse Management System (WMS)**
