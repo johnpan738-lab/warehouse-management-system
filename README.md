@@ -568,20 +568,39 @@ http://localhost:5173
 
 ## 24. Build και tests
 
-Για το backend:
+Για το backend κάνω build και εκτέλεση των tests με:
 
-```bash
 mvn clean test
-```
 
-Με αυτή την εντολή γίνεται clean, compile και εκτέλεση των tests.
+Για να δημιουργήσω το backend build χρησιμοποιώ:
 
-Για το frontend:
+mvn clean package
 
-```bash
+Για το frontend εγκαθιστώ πρώτα τα dependencies:
+
 npm install
+
+και στη συνέχεια κάνω build με:
+
 npm run build
-```
+
+Το frontend build δημιουργείται στον φάκελο `dist`.
+
+### Deploy / Εκτέλεση εφαρμογής
+
+Για την τοπική εκτέλεση της εφαρμογής ξεκινάω πρώτα το backend από το IntelliJ IDEA, κάνοντας Run στο:
+
+WarehouseApplication
+
+Το backend ξεκινάει στη θύρα 8080.
+
+Στη συνέχεια ανοίγω δεύτερο terminal μέσα στον φάκελο `frontend` και εκτελώ:
+
+npm run dev
+
+Το frontend ξεκινάει στη θύρα 5173.
+
+Για να λειτουργεί κανονικά η εφαρμογή, πρέπει να είναι ενεργά και το backend και το frontend.
 
 ---
 
@@ -723,7 +742,16 @@ PRODUCT SHIPMENTS FROM WAREHOUSE
 
 ---
 
-## 30. Developer
+## 30. GitHub Repository
+
+Το project είναι ανεβασμένο στο GitHub:
+
+https://github.com/johnpan738-lab/warehouse-management-system
+
+Μέσα στο repository υπάρχουν το backend, το frontend και το README του project.
+
+
+## 31. Developer
 
 **Ioannis Panagopoulos**
 
